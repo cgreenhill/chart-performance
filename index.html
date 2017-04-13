@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Chart Library Performance Test</title>
+	<link rel="stylesheet" type="text/css" href="dist/assets/css/examples.css">
+    <link rel="stylesheet" type="text/css" href="dist/assets/css/styles.css">
+    <script src="dist/assets/js/plotly-latest.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' type='text/javascript'></script>
+    <script src="http://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    <div id="app">
+        <select id="chartSelect" value="">
+            <option>Select a chart library</option>
+            <option value="ChartJS">ChartJS</option>
+            <option value="Plotly">Plotly</option>
+            <option value="Dygraphs">Dygraphs</option>
+            <option value="LabGrapher">Lab Grapher</option>
+        </select>
+        <h2 id="chartType"></h2>
+        <div id="chart" width="600" height="400"></div>
+        <div><label>Update rate:</label><input type="number" id="rateInput" value="50" class="number-input">/s</div>
+        <div><button id="addDataBtn">Add Data</button><input id="addDataAmtInput" value="1000">points</div>
+        <button id="startBtn">Start</button><button id="stopBtn">Stop</button>
+        <hr>
+        <div><label>Elapsed: </label><span id="elapsedTime"></span></div>
+        <div><label>Updates: </label><span id="updateCount"></span></div>
+        <div><label>Actual rate: </label><span id="actualRate"></span></div>
+        
+    </div>
+    <script src="dist/assets/js/bundle.js" type='text/javascript'></script>
+    
+</body>
+</html>

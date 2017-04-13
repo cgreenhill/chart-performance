@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/assets/js",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "strictNullChecks": false,
+    "jsx": "react",
+    "allowJs": true,
+    "allowUnreachableCode": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
